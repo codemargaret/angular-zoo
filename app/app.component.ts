@@ -17,7 +17,7 @@ import { Animal } from './animal.model';
 
 export class AppComponent {
   masterAnimalList: Animal[] =  [
-    new Animal('Polar Bear', 'Cuddles', 5, 'carnivore', 'Bear Pit', 2, 'male', 'long walks through the tundra', 'vegetables'),
+    new Animal('Polar Bear', 'Cuddles', 5, 'carnivore', 'Bear Pit', 2, 'male', 'long tundra walks', 'vegetables'),
     new Animal('Green Tree Frog', 'Fluffy', 1, 'omnivore', 'Amphibian Building', 1, 'female', 'flies', 'French people'),
     new Animal('African Grey Parrot', 'Alexa', 16, 'herbivore', 'Bird Cage', 2, 'female', 'intellectual conversations', 'crackers')
   ];

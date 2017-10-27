@@ -5,7 +5,9 @@ import { Animal } from './animal.model';
   selector: 'app-root',
   template: `
   <div class="container">
-    <h1>Zoo Animal Tracker</h1>
+    <div class="well">
+      <h1>Zoo Animal Tracker</h1>
+    </div>
       <animal-list [childAnimalList]="masterAnimalList" (clickSender)="editAnimal($event)"></animal-list>
       <new-animal (newAnimalSender)="addAnimal($event)"></new-animal>
       <edit-animal [selectedAnimal]="selectedAnimal" (doneSender)="finishedEditing()"></edit-animal>

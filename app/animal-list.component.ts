@@ -5,13 +5,16 @@ import { Animal } from './animal.model';
   selector: 'animal-list',
   template: `
     <div class="well">
-    <h1>Animal List</h1>
-      <select (change)="onChange($event.target.value)">
-        <option value="allAnimals">All Animals</option>
-        <option value="young">Young Animals</option>
-        <option value="mature" selected="selected">Mature Animals</option>
-      </select>
-      <ul *ngFor="let currentAnimal of childAnimalList | age:filterByAge">
+    <h2>Animal List</h2>
+      <h4>Filter by Age</h4>
+      <div class="form-group">
+        <select class = "form-control" (change)="onChange($event.target.value)">
+          <option value="young">Young Animals</option>
+          <option value="mature" selected="selected">Mature Animals</option>
+          <option selected="selected" value="allAnimals">All Animals</option>
+        </select>
+      </div>
+      <ul *ngFor="let currentAnimal of childAnimalList | age:filterByAge" class="list-unstyled">
           <li> Name: {{currentAnimal.name}}</li>
           <li>Species: {{currentAnimal.species}}</li>
           <li>Age: {{currentAnimal.age}}</li>

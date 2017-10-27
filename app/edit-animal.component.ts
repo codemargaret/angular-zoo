@@ -24,7 +24,7 @@ import { Animal } from './animal.model';
           <input class="form-check-input" type="radio" [(ngModel)]="selectedAnimal.caretakers" [value]="4"> 4 <br>
           </label>
         </div>
-        <button class="btn btn-info"(click)="done()">Done</button>
+        <button class="btn btn-warning"(click)="done()">Done</button>
       </div>
     </div>
   `

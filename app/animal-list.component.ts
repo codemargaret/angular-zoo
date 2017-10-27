@@ -14,18 +14,22 @@ import { Animal } from './animal.model';
           <option selected="selected" value="allAnimals">All Animals</option>
         </select>
       </div>
-      <ul *ngFor="let currentAnimal of childAnimalList | age:filterByAge" class="list-unstyled">
-          <li> Name: {{currentAnimal.name}}</li>
-          <li>Species: {{currentAnimal.species}}</li>
-          <li>Age: {{currentAnimal.age}}</li>
-          <li>Diet: {{currentAnimal.diet}}</li>
-          <li>Location: {{currentAnimal.location}}</li>
-          <li>Caretakers: {{currentAnimal.caretakers}}</li>
-          <li>Sex: {{currentAnimal.sex}}</li>
-          <li>Likes: {{currentAnimal.likes}}</li>
-          <li>Dislikes: {{currentAnimal.dislikes}}</li>
-          <button class="btn btn-info" (click)="editClicked(currentAnimal)">Edit!</button>
-      </ul>
+      <div class="row">
+        <ul *ngFor="let currentAnimal of childAnimalList | age:filterByAge" class="list-unstyled">
+          <div class="col-md-3">
+            <li> Name: {{currentAnimal.name}}</li>
+            <li>Species: {{currentAnimal.species}}</li>
+            <li>Age: {{currentAnimal.age}}</li>
+            <li>Diet: {{currentAnimal.diet}}</li>
+            <li>Location: {{currentAnimal.location}}</li>
+            <li>Caretakers: {{currentAnimal.caretakers}}</li>
+            <li>Sex: {{currentAnimal.sex}}</li>
+            <li>Likes: {{currentAnimal.likes}}</li>
+            <li>Dislikes: {{currentAnimal.dislikes}}</li>
+            <button class="btn btn-warning" (click)="editClicked(currentAnimal)">Edit!</button>
+          </div>
+        </ul>
+      </div>
     </div>
   `
 })

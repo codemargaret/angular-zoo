@@ -9,8 +9,8 @@ import { Animal } from './animal.model';
       <h1>Zoo Animal Tracker</h1>
     </div>
       <animal-list [childAnimalList]="masterAnimalList" (clickSender)="editAnimal($event)"></animal-list>
-      <new-animal (newAnimalSender)="addAnimal($event)"></new-animal>
       <edit-animal [selectedAnimal]="selectedAnimal" (doneSender)="finishedEditing()"></edit-animal>
+      <new-animal (newAnimalSender)="addAnimal($event)"></new-animal>
   </div>
     `
   })

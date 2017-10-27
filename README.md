@@ -39,6 +39,8 @@ _Run the following commands in Terminal:_
 
 _There are no known bugs at this time._
 
+_In the future, I would like to expand the application to display the total number of caretakers needed, and to sort animals by species and diet._
+
 ## Support and contact details
 
 _If you have any updates or suggestions please contact [Margaret] or make a contribution yourself._

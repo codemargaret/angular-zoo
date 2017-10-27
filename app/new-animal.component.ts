@@ -20,7 +20,11 @@ import { Animal } from './animal.model';
     </div>
     <div class="form-group">
       <label>Enter Animal Diet:</label>
-      <input class="form-control" #newDiet>
+      <select class="form-control" #newDiet>
+        <option [value]="1"> Herbivore </option>
+        <option [value]="2"> Carnivore </option>
+        <option [value]="3"> Omnivore </option>
+      </select>
     </div>
     <div class="form-group">
       <label>Enter Animal Location:</label>

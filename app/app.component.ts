@@ -11,15 +11,15 @@ import { Animal } from './animal.model';
       <animal-list [childAnimalList]="masterAnimalList" (clickSender)="editAnimal($event)"></animal-list>
       <edit-animal [selectedAnimal]="selectedAnimal" (doneSender)="finishedEditing()"></edit-animal>
       <new-animal (newAnimalSender)="addAnimal($event)"></new-animal>
-  </div>
+    </div>
     `
   })
 
 export class AppComponent {
   masterAnimalList: Animal[] =  [
-    new Animal('Polar Bear', 'Cuddles', 5, 'carnivore', 'Bear Pit', 2, 'male', 'long tundra walks', 'vegetables'),
-    new Animal('Green Tree Frog', 'Fluffy', 1, 'omnivore', 'Amphibian Building', 1, 'female', 'flies', 'French people'),
-    new Animal('African Grey Parrot', 'Alexa', 16, 'herbivore', 'Bird Cage', 2, 'female', 'intellectual conversations', 'crackers')
+    new Animal('Polar Bear', 'Cuddles', 5, '2', 'Bear Pit', 2, 'male', 'long tundra walks', 'vegetables'),
+    new Animal('Green Tree Frog', 'Fluffy', 1, '3', 'Amphibian Building', 1, 'female', 'flies', 'French people'),
+    new Animal('African Grey Parrot', 'Alexa', 16, '1', 'Bird Cage', 2, 'female', 'intellectual conversations', 'crackers')
   ];
 
   selectedAnimal = null;

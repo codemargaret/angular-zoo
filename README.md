@@ -37,7 +37,7 @@ _Run the following commands in Terminal:_
 
 ## Known Bugs
 
-_There are no known bugs at this time._
+_Accepts empty inputs._
 
 _In the future, I would like to expand the application to display the total number of caretakers needed, and to sort animals by species and diet._
 

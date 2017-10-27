@@ -4,14 +4,14 @@ import { Animal } from './animal.model';
 @Component({
   selector: 'new-animal',
   template: `
-  <h1>New Animal</h1>
   <div class="well">
+    <h1>New Animal</h1>
     <label>Enter Animal Species:</label>
     <input #newSpecies>
     <label>Enter Animal Name:</label>
     <input #newName>
     <label>Enter Animal Age:</label>
-    <input #newAge>
+    <input type="number" #newAge>
     <label>Enter Animal Diet:</label>
     <input #newDiet>
     <label>Enter Animal Location:</label>

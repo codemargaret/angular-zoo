@@ -7,6 +7,7 @@ import { Animal } from './animal.model';
   <div class="container">
     <h1>Zoo Animal Tracker</h1>
       <animal-list [childAnimalList]="masterAnimalList"></animal-list>
+      <new-animal (newAnimalSender)="addAnimal($event)"></new-animal>
   </div>
     `
   })
@@ -14,9 +15,13 @@ import { Animal } from './animal.model';
 export class AppComponent {
   masterAnimalList: Animal[] =  [
     new Animal('Polar Bear', 'Cuddles', 5, 'carnivore', 'Bear Pit', 2, 'male', 'long walks on an iceberg', 'vegetables'),
-    new Animal('Green Tree Frog', 'Fluffy', 1, 'omnivore', 'South American Building', 2, 'female', 'flies', 'French people'),
+    new Animal('Green Tree Frog', 'Fluffy', 1, 'omnivore', 'Amphibian Building', 2, 'female', 'flies', 'French people'),
     new Animal('African Grey Parrot', 'Alexa', 1, 'herbivore', 'Bird Cage', 16, 'female', 'intellectual conversations', 'crackers')
   ];
 
   selectedAnimal = null;
+
+  addAnimal(newAnimalFromChild: Animal) {
+    this.masterAnimalList.push(newAnimalFromChild);
+  }
 }

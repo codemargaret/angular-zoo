@@ -12,7 +12,7 @@ _This application allows users to store and edit information about individual zo
 
 _Run the following commands in Terminal:_
 
-* _$ git clone (https://github.com/margaret85/angular-zoo.git)_
+* _$ git clone [this repository](https://github.com/codemargaret/angular-zoo.git)_
 * _$ cd angular-zoo_
 * _$ npm install_
 * _$ bower install_
@@ -43,9 +43,8 @@ _In the future, I would like to expand the application to display the total numb
 
 ## Support and contact details
 
-_If you have any updates or suggestions please contact [Margaret] or make a contribution yourself._
+_If you have any updates or suggestions please contact [Margaret](codeberry1@gmail.com) or make a contribution yourself._
 
-[Margaret]: mailto:margaretshelaghmcgovern@gmail.com
 
 ## Technologies Used
 

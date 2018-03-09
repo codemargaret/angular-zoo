@@ -5,11 +5,9 @@
 #### By _**Margaret Berry**_
 
 ## Description
-
 _This application allows users to store and edit information about individual zoo animals, including name, species, age, and more.  Animals can be viewed in a list, which can be filtered by animal age._
 
 ## Setup/Installation Requirements
-
 _Run the following commands in Terminal:_
 
 * _$ git clone [this repository](https://github.com/codemargaret/angular-zoo.git)_
@@ -20,14 +18,12 @@ _Run the following commands in Terminal:_
 * _$ npm start_
 
 ## User Stories
-
 * _A user can log a newly-admitted animal by submitting a form with animal species, name, age, diet, zoo location, number of needed caretakers, sex, one like and one dislike._
 * _A user can view a list of animals they have logged._
 * _A user can view all animals, only young animals (less than 2 years of age), or only mature animals (2 years of age and older)._
 * _A user can click an animal to edit its name, age or caretakers._
 
 ## Specifications
-
 | Spec                                                | Input       | Output           |
 |-----------------------------------------------------|-------------|------------------|
 | Log a new animal and see it in the list. | New Animal: Name: Simba, Age: 3, Zoo Location: Mammal Trail, Caretakers: 2, Sex: Male, Likes: Nala, Dislikes: Scar | Animal List: Name: Simba, Age: 3, Zoo Location: Mammal Trail, Caretakers:2, Sex: Male Likes: Nala, Dislikes: Scar |
@@ -36,25 +32,20 @@ _Run the following commands in Terminal:_
 | See only animals age 2 and over | Filter by Age: Mature animals | Animal List: Name: Mufasa, Age: 10 |
 
 ## Known Bugs
-
 _Accepts empty inputs._
 
 _In the future, I would like to expand the application to display the total number of caretakers needed, and to sort animals by species and diet._
 
 ## Support and contact details
-
 _If you have any updates or suggestions please contact [Margaret](codeberry1@gmail.com) or make a contribution yourself._
 
-
 ## Technologies Used
-
 * _JavaScript_
 * _Angular 2_
 * _Node_
 * _Bower_
 
 ### License
-
-*MIT License*
+*This software is licensed under the MIT License*
 
 Copyright (c) 2017 **_Margaret Berry_**
